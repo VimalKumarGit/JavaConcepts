@@ -1,0 +1,82 @@
+public class StringMethods1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String a = "Singaram Vidya Vimal Latha";
+		
+		System.out.println(a.startsWith("Singaram"));
+		System.out.println(a.endsWith("Latha"));
+		
+		StringMethods1 obj = new StringMethods1();
+		obj.manual_startswith("Singaram");
+		obj.manual_endswith("Latha");
+
+	}
+	
+	//Manual startsWith method
+	public void manual_startswith(String a) {
+				
+		String b = "Singaram Vidya Vimal Latha";
+		char[] c = a.toCharArray();
+		for(int i=0; i<c.length; i++)
+		{
+			System.out.print(c[i]);
+		}
+		
+		System.out.println();
+		
+		int count = 0;
+		for(int i=0; i<a.length(); i++)
+		{
+			if(a.charAt(i)==b.charAt(i))
+			{
+				count++;
+			}
+		}
+		System.out.println(count);
+		
+		if(a.length()==count)
+		{
+			System.out.println("Yes, the given string starts with "+a);
+		}
+		
+		System.out.println();
+	}
+	
+	
+	
+	private void manual_endswith(String d) {
+		
+		String e = "Singaram Vidya Vimal Latha";
+		System.out.println(e.length());
+		System.out.println(d.length());
+		System.out.println(e.length()-d.length());
+		int start = e.length()-d.length();
+		
+		int j=0;
+		int count = 0;
+		for(int i=start; i<e.length(); i++)
+		{
+			if(e.charAt(i)==d.charAt(j))
+			{
+				count++;
+			}
+			j++;
+		}
+		System.out.println(count);
+		
+		if(count==d.length())
+		{
+			System.out.println("Yes, the given string ends with "+d);
+		}
+		else {
+			System.out.println("No");
+		}
+		
+		
+		
+	}
+
+
+}
