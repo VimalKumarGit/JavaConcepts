@@ -1,0 +1,68 @@
+public class ArrayProgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] a = {10, 20, 30, 40, 10, 20, 30, 10, 20, 10};
+		int[] freq = new int[a.length];
+		/*int no = a[0];
+		int count = 1;
+		for(int i=1; i<a.length; i++)
+		{
+			if(no==a[i])
+					{
+						count++;
+						
+					}
+		}
+		System.out.println(count);*/
+		
+		/*no = a[1];
+		count = 1;
+		for(int i=2; i<a.length; i++)
+		{
+			if(no==a[i])
+					{
+						count++;
+					}
+		}
+		System.out.println(count);*/
+		
+		/*no = a[2];
+		count = 1;
+		for(int i=3; i<a.length; i++)
+		{
+			if(no==a[i])
+					{
+						count++;
+					}
+		}
+		System.out.println(count);*/
+		
+		
+		for(int j=0; j<a.length; j++)
+		{
+			int no = a[j];
+			int count = 1;
+			for(int i=j+1; i<a.length; i++)
+			{
+				if(no==a[i])
+					{
+						count++;
+						freq[i]=-1;
+					}
+			}
+			if(freq[j]!=-1)
+			freq[j]=count;
+		//System.out.println(a[j] + " count is " + count);
+		}
+		
+		for(int i=0; i<a.length; i++)
+		{
+			if(freq[i]>0)
+			System.out.println(a[i] + " occurs "+ freq[i] + "times");
+		}
+
+	}
+
+}
