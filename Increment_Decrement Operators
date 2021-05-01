@@ -1,0 +1,23 @@
+System.out.println("Post Increament Operator");
+		int f = 0;
+		int g = 1;
+		int h = g++;
+		
+		System.out.println(h+" "+g);
+		
+		System.out.println("Post Decreament Operator");
+		int i = 2;
+		int j = i--;
+		
+		System.out.println(j+" "+i);
+		
+		System.out.println("Pre Increament Operator");
+		int k = 0;
+		int l = ++k;
+		System.out.println(l+" "+k);
+		
+		System.out.println("Pre Decreament Operator");
+		int m = 4;
+		int n = --m;
+		System.out.println(n+" "+m);
+		
