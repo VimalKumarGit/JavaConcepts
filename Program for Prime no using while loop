@@ -1,0 +1,44 @@
+public class WhileDivisible {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WhileDivisible obj = new WhileDivisible();
+		obj.primenoprime_divisible();
+		
+			
+	}
+	
+	public void primenoprime_divisible()
+	{
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter a Number: ");
+		int no = input.nextInt();
+		int i = 2;
+		
+		int count = 0;
+		
+		while(i<no)
+		{
+			if(no%i==0)
+			{
+				System.out.println("Not a Prime & Divisible by "+ i);
+				count++;
+			}
+			i++;
+			
+		}
+		
+		System.out.println("No of divisors: "+count);
+		
+		if(count==0)
+		{
+			System.out.println("Prime Number");
+		}
+		else
+		{
+			System.out.println("Not a Prime Number");
+		}
+				
+	}
+
+}
