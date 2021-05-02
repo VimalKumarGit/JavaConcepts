@@ -1,0 +1,25 @@
+public class WhileLoop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WhileLoop obj = new WhileLoop();
+		obj.addition_of_two();
+	}
+	
+	public void addition_of_two()
+	{
+		int total = 1;
+		int no = 1;
+		while(no<=5)
+		{
+			total = total + no;
+			System.out.println(total);
+			no++;
+			
+			
+		}
+		System.out.println("*****************");
+		System.out.println(total);
+	}
+
+}
