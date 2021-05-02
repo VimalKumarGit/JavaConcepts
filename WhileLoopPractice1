@@ -1,0 +1,23 @@
+public class WhileLoop1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WhileLoop1 obj = new WhileLoop1();
+		obj.multiplicaton();
+	}
+	
+	public void multiplicaton()
+	{
+		int total = 1;
+		int no = 1;
+		while(no<=10)
+		{
+			total = total * no;
+			System.out.println(total);
+			no++;
+		}
+		System.out.println("*************");
+		System.out.println(total);
+	}
+
+}
