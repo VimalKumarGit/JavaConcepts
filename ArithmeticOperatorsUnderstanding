@@ -1,0 +1,27 @@
+public class ArithmeticOperators {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/*Arithmetic Operators
+		+ ----> for addition
+		- ----> for subtraction
+		* ----> for multiplication
+		/ ----> for division
+		% ----> for modulo
+		++ ---> increase by 1
+		-- ---> decrease by 1		
+		*/
+		
+		int a = 45;
+		int b = 35;
+		
+		double c = (double)a/(double)b;//using type casting 
+		System.out.println(c);
+		
+		int d = a%b;
+		System.out.println(d);//modulo(remainder) 
+
+	}
+
+}
