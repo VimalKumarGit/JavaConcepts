@@ -1,0 +1,23 @@
+public class BitwiseOperator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/* Bitwise Operators
+		 ! NOT
+		 & AND
+		 | OR
+		 */
+		 
+		
+		int a = 5; //binary = 1 0 1;
+		int b = 7; //binary = 1 1 1;
+		
+		int c = a & b;//using AND operator, which is true if both cases are true
+		
+		System.out.println(c);
+		
+
+	}
+
+}
