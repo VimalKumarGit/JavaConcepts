@@ -1,0 +1,15 @@
+public class ComparsionOperators {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//ComparsionOperators--> ==, !=, >=, <=, >, <
+		
+		int a = 10, b=12;
+		
+		System.out.println(a>=b);
+		
+
+	}
+
+}
