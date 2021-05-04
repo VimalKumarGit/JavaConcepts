@@ -1,0 +1,26 @@
+public class ConditionStatement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a=25;
+		
+		if(a<=10)
+		{
+			System.out.println("a <= 10");
+		}
+		
+		else if(a>10 && a<=20)
+		{
+			System.out.println("a>10 and <=20");
+		}
+		
+		else
+		{
+			System.out.println("a>20");
+		}		
+		
+
+	}
+
+}
