@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class SwitchCaseCalculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter first number:");
+		double a = sc.nextDouble();
+		
+		System.out.println("Enter second number:");
+		double b = sc.nextDouble();
+		
+		System.out.println("Enter the operation to be performed:");
+		double result = 0;
+		//sc.nextLine();
+		//char operation = sc.nextLine().charAt(1);
+		char ops = sc.next().charAt(0);
+		
+		switch (ops) {
+		
+		case '+':
+			result = a+b;
+			break;
+			
+		case '-':
+			result = a-b;
+			break;
+		
+		case '*':
+			result = a*b;
+			break;
+			
+		case '/':
+			result = a/b;
+			break;
+			
+		
+		}
+				
+		System.out.println("Result is "+result);	
+		
+		}
+
+	
+
+}
