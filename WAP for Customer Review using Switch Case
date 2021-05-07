@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class CustomerReviewPrg_SwitchCase {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("How much would you rate our service on scale of 1 to 5?");
+		System.out.println("Enter your rate of our service");
+		int rate = sc.nextInt();
+		
+		switch (rate) {
+		
+		case 1:case 2:
+			System.out.println("Bad service");
+			break;
+		case 3:
+			System.out.println("Average service");
+			break;
+		case 4:case 5:
+			System.out.println("Good service");
+			break;
+			default:
+				System.out.println("Invalid rate");
+			
+		}
+		
+		
+		
+		
+
+	}
+
+}
