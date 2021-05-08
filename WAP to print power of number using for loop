@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class PowerofNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number:");
+		int a = sc.nextInt();
+		System.out.println("Enter a power to be calculated:");
+		int b = sc.nextInt();
+		
+		int result =1;
+		
+		for(int i=1; i<=b; i++)
+		{
+			result *=a;
+			System.out.print(result+" ");
+		}
+		System.out.println();
+		System.out.print(result);
+		
+
+	}
+
+}
