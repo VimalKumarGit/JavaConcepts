@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class FactorialProgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub		
+		//5! = 5*(5-1)*(5-2)*(5-3).....*1
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number for finding its Factorial:");
+		int m = sc.nextInt();
+		
+		
+		int n = 5, fact=1;
+		n=m;
+		for(int i=n; i>=1; i--)
+		{
+			fact=fact*i;
+			
+		}
+		
+		System.out.println(fact);
+
+	}
+
+}
