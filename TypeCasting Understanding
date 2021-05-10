@@ -1,0 +1,53 @@
+public class TypeCasting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Automatic/Widening Type casting
+		int a = 5;
+		
+		long b = a;//saving/passing/converting small value data type in large value data type
+		
+		System.out.println(b);
+		
+		//Manual/Narrow Type Casting
+		double cont = 9.546;
+		
+		int container = (int)cont;//saving/passing/converting large value data type in small value data type
+		
+		System.out.println(cont);
+		System.out.println(container);
+		
+		System.out.println();
+		int c = 45, d=35;
+		double e = (double)c/(double)d;
+		System.out.println(e);
+		
+		System.out.println("Post Increament Operator");
+		int f = 0;
+		int g = 1;
+		int h = g++;
+		
+		System.out.println(h+" "+g);
+		
+		System.out.println("Post Decreament Operator");
+		int i = 2;
+		int j = i--;
+		
+		System.out.println(j+" "+i);
+		
+		System.out.println("Pre Increament Operator");
+		int k = 0;
+		int l = ++k;
+		System.out.println(l+" "+k);
+		
+		System.out.println("Pre Decreament Operator");
+		int m = 4;
+		int n = --m;
+		System.out.println(n+" "+m);
+		
+		
+
+	}
+
+}
