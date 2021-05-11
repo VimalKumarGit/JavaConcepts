@@ -1,0 +1,37 @@
+public class Basics {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/*String obj = new String();
+		System.out.println("Hashcode of"+obj);
+		System.out.println(obj.hashCode());
+		
+		String obj1 ="Apple";
+		System.out.println("Hashcode of obj1 "+obj1.hashCode());*/
+		
+		Basics a = new Basics();
+		System.out.println("Hashcode of a "+a);
+		System.out.println(a.hashCode());		
+		
+		Basics b = new Basics();
+		System.out.println("Hashcode of b "+b);
+		System.out.println(b.hashCode());		
+				
+		if(a.equals(b))
+		{
+			System.out.println("Both are equal");
+		}
+		else
+			System.out.println("Not equal");		
+		
+		
+	}
+	
+	public boolean equals(Object c)
+	{
+		return true;
+	}	
+	
+
+}
