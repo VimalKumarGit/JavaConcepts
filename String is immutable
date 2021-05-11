@@ -1,0 +1,25 @@
+public class Basics1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String name = "Singaram";
+		System.out.println(name + " hashcode " + name.hashCode());
+		
+		name = "Vimal";
+		System.out.println(name + " hashcode " + name.hashCode());
+		
+		
+		String bank1 = "SBI";
+		System.out.println("hashcode "+bank1.hashCode());
+		
+		String bank2 = "SBI";
+		System.out.println("hashcode "+bank2.hashCode());
+		
+		String bank3 = "SBI";
+		System.out.println("hashcode "+bank3.hashCode());
+		
+
+	}
+
+}
