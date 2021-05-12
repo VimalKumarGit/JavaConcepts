@@ -1,0 +1,66 @@
+public class StringMethodsPractice1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String b = "Singaram Vimal Vidya Latha";
+		
+		System.out.println(b.endsWith("Latha"));
+		
+		System.out.println(b.startsWith("Singaram"));
+		
+		System.out.println(b.toLowerCase());
+		
+		StringMethodsPractice1 obj = new StringMethodsPractice1();
+		obj.confirmstarwith("Singaram");
+		obj.confirmendswith("Latha");
+		
+	}
+
+	public void confirmstarwith(String ip) {
+		
+		String names = "Singaram Vimal Vidya Latha";
+		int count = 0;
+		for(int i=0; i<ip.length(); i++)
+		{
+			if(ip.charAt(i)==names.charAt(i));
+			{
+				count++;
+			}
+		}		
+		System.out.println(count);
+		if(count==ip.length())
+		{
+			System.out.println("Yes, given string starts with "+ip);
+		}
+		
+		
+	}
+	
+	public void confirmendswith(String in) {
+		// TODO Auto-generated method stub
+		
+		String names = "Singaram Vimal Vidya Latha";
+		int start = names.length()-in.length();
+		System.out.println(start);
+		int j=0;
+		int count =0;
+		for(int i=start; i<names.length(); i++)
+		{
+			if(names.charAt(i)==in.charAt(j))
+			{
+				count++;
+			}
+			j++;
+		}
+		System.out.println(count);
+		if(count==in.length())
+			System.out.println("Yes, given string ends with "+in);
+		
+		
+		
+		
+		
+	}
+
+}
