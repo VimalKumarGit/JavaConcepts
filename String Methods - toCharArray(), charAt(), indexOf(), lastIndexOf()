@@ -1,0 +1,29 @@
+public class StringMethodsPractice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String a = "ABCDEFGHIJKLMNOPA";
+		
+		char[] b = a.toCharArray();
+		
+		for(int i=0; i<b.length; i++)
+		{
+			System.out.print(b[i]+" ");
+		}
+		
+		System.out.println();
+		System.out.println(a.charAt(5));
+		
+		System.out.println(a.indexOf('F'));
+		
+		int position = a.lastIndexOf('A');
+		System.out.println(position);
+		
+		
+		
+		
+		
+	}
+
+}
