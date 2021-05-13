@@ -1,0 +1,52 @@
+public class FrequencyofNumber{
+
+	public static void main(String[] args)
+	{
+	
+		int[] ar = {10,20,30,40,50,10,30,20,40,20,10,30,10,20};
+		int[] freq = new int[ar.length];		
+		
+		
+		for(int i=0; i<ar.length; i++)
+		{
+			int no = ar[i];
+			int count = 1;
+			for(int j=i+1; j<ar.length; j++)
+			{
+				if(ar[i]==ar[j])
+				{
+					count++;
+					freq[j]=-1;
+				}
+			}
+			if(freq[i]!=-1)
+			{
+				freq[i]=count;
+			}
+			
+			//System.out.println(ar[i]+" occurs "+ count +" times");
+		}
+		
+		for(int i=0; i<ar.length; i++)
+		{
+			if(freq[i]>0)
+				System.out.println(ar[i]+" occurs "+ freq[i] +" times");
+		}
+		
+		int position = 0;
+		int max = -2147483648;
+		for(int i=0; i<freq.length; i++)
+		{
+			if(freq[i]>max)
+			{
+				max=freq[i];
+				position = i;
+			}
+		}
+		System.out.println("Maximum frequency of number is "+max);
+		System.out.println("The number is "+ar[position]);
+			
+	}
+	
+
+}
