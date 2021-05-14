@@ -1,0 +1,65 @@
+public class Methods1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String names = "Singaram Vimal Vidya Latha";
+		
+		System.out.println(names.startsWith("Vimal"));
+		System.out.println(names.endsWith("Latha"));
+		
+		Methods1 obj = new Methods1();		
+		obj.confStartsWith("Singaram");
+		obj.confEndsWith("Latha");
+
+	}
+
+	public void confStartsWith(String string) {
+		
+		String names = "Singaram Vimal Vidya Latha";
+		int count = 0;
+		for(int i=0; i<string.length(); i++)
+		{
+			if(string.charAt(i)==names.charAt(i))
+			{
+				count++;
+			}
+		}
+		System.out.println(count);
+		if(string.length()==count)
+			System.out.println("Yes, given string starts with "+string);
+		else
+			System.out.println("No, it starts with "+string);
+		
+	}
+	
+	public void confEndsWith(String string) {
+		
+		String names = "Singaram Vimal Vidya Latha";
+		int start = names.length()-string.length();
+		
+		System.out.println(start);
+		int j=0;
+		int count = 0;
+		for(int i=start; i<names.length(); i++)
+		{
+			if(names.charAt(i)==string.charAt(j))
+			{
+				count++;
+			}
+			j++;
+		}
+		System.out.println(count);
+		if(count==string.length())
+		{
+			System.out.println("Yes, given string ends with "+string);
+		}
+		else
+			System.out.println("No, it ends with "+string);
+		
+		
+		
+	}
+
+
+}
