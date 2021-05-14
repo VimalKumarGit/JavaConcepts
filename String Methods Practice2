@@ -1,0 +1,61 @@
+public class Practice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Practice obj = new Practice();
+		obj.confStart("Apple");
+		obj.confEnd("Strawberry");
+		
+		String fruits = "Apple Banana Grapes Pineapple Strawberry";
+
+	}
+
+	public void confStart(String string) {
+		// TODO Auto-generated method stub
+		
+		String fruits = "Apple Banana Grapes Pineapple Strawberry";
+		int count=0;
+		for(int i=0; i<string.length(); i++)
+		{
+			if(string.charAt(i)==fruits.charAt(i))
+			{
+				count++;
+			}
+		}
+		System.out.println(count);
+		if(string.length()==count)
+		{
+			System.out.println("Yes, given string starts with "+string);
+		}
+		
+	}
+	
+	public void confEnd(String string) {
+		
+		String fruits = "Apple Banana Grapes Pineapple Strawberry";
+		
+		int stpoint = fruits.length() - string.length();
+		System.out.println(stpoint);
+		int count = 0;
+		int j=0;
+		for(int i=stpoint; i<fruits.length(); i++)
+		{
+			if(fruits.charAt(i)==string.charAt(j))
+			{
+				count++;
+			}
+			j++;
+		}
+		System.out.println(count);
+		if(string.length()==count)
+		{
+			System.out.println("Yes, given string ends with "+string);
+		}
+		
+		
+	}
+	
+	
+
+}
