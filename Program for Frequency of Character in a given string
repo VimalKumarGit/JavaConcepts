@@ -1,0 +1,55 @@
+public class FreqofCharacter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String fruits = "Apple Banana Grapes Pommagranate";		
+		char[] a = fruits.toCharArray();
+		int[] freq = new int[a.length];
+		
+		for(int j=0; j<a.length; j++)
+		{
+			int count=1;
+			for(int i=j+1; i<a.length; i++)
+			{
+				if(a[j]==a[i])
+				{
+					count++;
+					freq[i]=-1;
+				}
+						
+			}
+			if(freq[j]!=-1)
+			{
+				freq[j]=count;
+			}
+					
+		//System.out.println(a[j]+" occurs "+freq[j]+" times");	
+		}
+		
+		for(int k=0; k<a.length; k++)
+		{
+			if(freq[k]>0)
+				System.out.println(a[k]+" occurs "+ freq[k]+ " times");
+		}
+		
+		int max = Integer.MIN_VALUE;
+		int position = 0;
+		for(int l=0; l<freq.length; l++)
+		{
+			if(freq[l]>max)
+			{
+				max=freq[l];
+				position=l;
+			}
+			
+		}
+		
+		System.out.println(a[position] +" is Most repeated character & occurs "+ max+ " times");
+		System.out.println(" It's position is "+position);
+		
+		
+
+	}
+
+}
