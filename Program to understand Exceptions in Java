@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class BasicsEH {	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		BasicsEH obj = new BasicsEH();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a first number: ");
+		int no1 = sc.nextInt();
+		System.out.println("Enter a second number: ");
+		int no2 = sc.nextInt();
+		obj.calculate(no1, no2);
+
+	}
+
+	public void calculate(int no1, int no2) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Addition: "+(no1+no2));
+		System.out.println("Subtraction: "+(no1-no2));
+		System.out.println("Multiplication: "+(no1*no2));
+		System.out.println("Division: "+(no1/no2));// 10/0=infinity, hence Exception
+		System.out.println("Modulus: "+(no1%no2)); // this will not be executed due to above Exception
+		
+	}
+
+}
