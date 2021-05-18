@@ -1,0 +1,29 @@
+public class BasicsEHDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Arithmetic Exception
+		/*int a = 50/0;
+		System.out.println(a);*/
+		
+		//NullPointer Exception
+		/*String s =null;
+		System.out.println(s.length());*/
+		
+		//NumberFormat Exception
+		/*String s1 = "abc";
+		int i = Integer.parseInt(s1);
+		System.out.println(i);*/
+		
+		//ArrayIndexOutofBounds Exception
+		int[] a = new int[5];
+		//a[4] = 4;
+		a[5] = 50;
+		System.out.println(a[5]);
+		
+		
+
+	}
+
+}
