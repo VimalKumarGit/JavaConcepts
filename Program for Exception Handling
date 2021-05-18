@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class EHProgramDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		EHProgramDemo obj = new EHProgramDemo();
+		obj.exptnhandling();
+
+	}
+
+	public void exptnhandling() {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter two numbers");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		try {
+		System.out.println(a/b);
+		}
+		catch(Exception e) {
+			System.out.println("Check the 2nd number!");
+			exptnhandling();
+		}
+		
+	}
+
+}
