@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class EHProgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		EHProgram obj = new EHProgram();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a 1st number: ");
+		int a = sc.nextInt();
+		System.out.println("Enter a 2nd number: ");
+		int b = sc.nextInt();	
+		
+		obj.calculate(a,b);
+
+	}
+
+	public void calculate(int a, int b) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Addition: "+(a+b));
+		System.out.println("Subtraction: "+(a-b));
+		System.out.println("Multiplication: "+(a*b));
+		try {
+		System.out.println("Division: "+(a/b));
+		}
+		catch(ArithmeticException ae) {
+			System.out.println("Dear user! check the divisor, it is 0");
+		}
+		//System.out.println("Modulus: "+(a%b));
+		
+	}
+	
+	
+
+}
