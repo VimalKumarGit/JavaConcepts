@@ -1,0 +1,59 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class ExceptionHandlingDemo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ExceptionHandlingDemo1 obj = new ExceptionHandlingDemo1();
+		obj.getdetails();
+
+	}
+
+	public void getdetails() {
+		Scanner sc = new Scanner(System.in);
+		try {
+		System.out.println("Enter Account Number:");
+		int ac = sc.nextInt();
+		System.out.println("Enter PIN:");
+		int pin = sc.nextInt();
+		
+			try {
+			System.out.println("Enter Array Length:");
+			int no = sc.nextInt();
+		
+				int[] employees = new int[no];
+				for(int i=0; i<employees.length; i++)
+				{
+				employees[i] = 20000;
+				}
+			}
+			catch(NegativeArraySizeException ne) 
+		      {
+		        System.out.println("Array length should be positive or zero. ");
+		      }
+		}
+		
+		catch(InputMismatchException ime)
+		{
+			System.out.println("Account number/PIN not correct");
+		}
+		
+		catch(ArrayIndexOutOfBoundsException ae)
+		{
+			System.out.println("Check number of employees");
+		}
+		
+		catch( Exception e)
+		{
+			System.out.println("Incorrect");
+		}
+		
+		finally {
+			System.out.println("Close my transaction");
+		}
+		
+	}
+
+}
