@@ -1,0 +1,21 @@
+public class RecursionBasics {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		RecursionBasics obj = new RecursionBasics();
+		obj.recursion(1);
+
+	}
+	
+	public void recursion(int n)
+	{
+		if(n<=15)
+		{
+			System.out.print(n+" ");
+			recursion(n+1);
+			
+		}
+	}
+
+}
