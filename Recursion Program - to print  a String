@@ -1,0 +1,40 @@
+public class RecursionProg {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String name = "Vimal kumar";	
+		
+		RecursionProg obj = new RecursionProg();
+		
+		obj.recursion(name, 0);
+		
+
+	}
+
+	public void recursion(String name, int n) {
+		char[] a = name.toCharArray();
+		
+		/*for(int i=0; i<a.length; i++)
+		{
+			System.out.print(a[i]);
+		}*/
+		
+		
+		if(n<a.length)
+		{
+			
+			System.out.print(a[n]);
+			recursion(name, n+1);
+			
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+
+}
