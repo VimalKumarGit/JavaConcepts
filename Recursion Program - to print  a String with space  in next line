@@ -1,0 +1,35 @@
+public class RecursionProg1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String name = "Vimal Kumar";	
+		
+		RecursionProg1 obj = new RecursionProg1();
+		obj.splitname(name, 0);
+
+	}
+
+	public void splitname(String name, int m) {
+		char[] a = name.toCharArray();
+		
+		if(m<a.length)
+		{
+			if(a[m]!=' ')
+			{
+				System.out.print(a[m]);
+				splitname(name, m+1);
+				
+			//System.out.println();	
+			//splitname(name, m+1);
+			}
+			else
+			{
+			System.out.println();
+			splitname(name, m+1);
+			}
+		}
+		
+	}
+
+}
