@@ -1,0 +1,30 @@
+import java.util.Arrays;
+
+public class ArraysClassBasics {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] list = {5,6,7,8,9,10,11};
+		int[] list1 = {5,6,7,8,9,10,12};
+		
+		
+		int result = Arrays.binarySearch(list, 10);
+		System.out.println(result);
+		System.out.println("******");
+				
+		int comparision = Arrays.compare(list, list1);
+		System.out.println(comparision);
+		System.out.println("******");
+		
+		int[] list2 = Arrays.copyOf(list, 4);
+		for(int i=0; i<list2.length; i++)
+		{
+			System.out.print(list2[i]+" ");
+		}
+		
+		
+
+	}
+
+}
