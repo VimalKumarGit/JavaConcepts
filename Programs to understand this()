@@ -1,0 +1,32 @@
+public class Test {
+	
+	public Test(int x, int y, int z) 
+	{
+		this(x,y);//Constructor call with two parameters
+		System.out.println("z= "+z);
+		
+	}
+	
+	public Test(int x, int y) 
+	{
+		this(x);//Constructor call with one parameter
+		System.out.println("y= "+y);
+	}
+	
+	public Test(int x) 	
+	{
+		System.out.println("x= "+x);
+	}	
+
+}
+
+public class ThisDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Test obj = new Test(10,11,12);////Constructor call with three parameters
+
+	}
+
+}
