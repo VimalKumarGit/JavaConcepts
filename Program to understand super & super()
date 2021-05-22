@@ -1,0 +1,66 @@
+package com.Super;
+
+//This is parent class
+public class Test {
+		
+	
+	int a = 10;
+	
+	//this is parent class Constructor
+	public Test(int x)
+	{
+		System.out.println("Test class Constructor");
+		System.out.println("The value of x: "+x);
+	}
+	
+	//this is parent class method
+	public void display()
+	{
+		System.out.println("Parent class method");
+		System.out.println("The value of a: "+a);
+	}
+
+}
+
+package com.Super;
+
+//This is child extending Test class
+public class Display extends Test {
+	
+	
+	int a = 20;
+	
+	//this child class Constructor
+	public Display(int y)
+	{
+		super(y);//invoking parent class Constructor
+		System.out.println("Display class Constructor");
+		System.out.println("The value of y: "+y);
+	}
+	
+	//overridden method of parent class
+	public void display()
+	{
+		super.display();//invoking parent class method 
+		System.out.println("Child class method");
+		System.out.println("The value of a: "+a);
+	}
+	
+	
+
+}
+
+package com.Super;
+
+//inthis class we are creating object for Display class
+public abstract class SuperDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Display obj = new Display(100);
+		obj.display();//calling display method in Display class
+
+	}
+
+}
