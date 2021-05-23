@@ -1,0 +1,39 @@
+class Teacher {	
+	String name;
+	int age;
+	String address;
+}
+class Student extends Teacher {	
+	int marks=100;
+	int rollno=12;
+}
+class GraduateStudent extends Student{	
+	String qualification = "Bsc";
+}
+class Person{
+	public static void main(String[] args)
+	{
+		Teacher t = new Student();//Up casting
+		Teacher t1 = new GraduateStudent(); //Up casting
+		
+		//Student s3 = new Teacher();//Throws CompileTime error
+		
+		Student s = new Student();
+		System.out.println(s instanceof Teacher);
+		
+		//System.out.println(t.marks);//does not work	
+		//System.out.println(t1.qualification);
+			
+		//Student s = (Student)new Teacher();
+		//Student s1 = (Student) s;
+		
+		Student s1 = (Student)t;//Down Casting
+		System.out.println(s1.marks);// Works
+		System.out.println(s1.rollno);
+		
+		GraduateStudent gs = (GraduateStudent)t1;//Down Casting
+		System.out.println(gs.qualification);		
+		
+	}
+}
+
