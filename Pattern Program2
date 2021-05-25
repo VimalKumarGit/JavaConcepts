@@ -1,0 +1,48 @@
+public class Nineth {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a = 1; 
+		int b = 6;
+		int c = 6;
+		for(int row=1; row<=7; row++)
+		{
+			for(int col=1; col<=row; col++)
+			{
+				System.out.print("*");
+			}
+			
+			for(int col=a; col<=7; col++)
+			{
+				System.out.print(col);
+			}
+			a++;
+			
+			
+			System.out.println();
+		}
+		
+		for(int row=1; row<=6; row++)
+		{
+			for(int col=1; col<=b; col++)
+			{
+				System.out.print("*");
+			}
+			b--;
+			
+			for(int col=c; col<=7; col++)
+			{
+				System.out.print(col);
+			}
+			c--;
+			
+			System.out.println();
+		}
+
+
+
+	}
+	
+
+}
