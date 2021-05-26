@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class LinearSearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number b/w 0 to 9:");
+		int no = sc.nextInt();
+		
+		int[] ar = {5,3,9,7,4,1,0,8,2,6};
+		int temp = 0;
+		
+		for(int i=0; i<ar.length; i++)
+		{
+			if(ar[i]==no)
+			{
+				System.out.println(no+" is at position "+i );
+				temp++;
+			}
+		}
+		
+		if(temp==0)
+		{
+			System.out.println(no+" is not found");
+		}
+		
+		
+		
+
+	}
+
+}
