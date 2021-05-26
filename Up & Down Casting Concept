@@ -1,0 +1,37 @@
+class Parent{
+	String name="Vimal Kumar";
+	String edu="Bsc";
+	int age=100;
+}
+
+class Child extends Parent{
+	String vehicle="Rolls Royce";
+	String house="Villa";
+}
+
+class Grandson extends Child{
+	String apartment="Prestige";
+}
+
+
+
+public class Multilevel {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Parent p = new Child();//Up casting
+		Parent p1 = new Grandson();//Up casting
+		
+		//System.out.println(p.vehicle);		
+		Child c = (Child) p;//Down casting
+		System.out.println(c.vehicle);
+		
+		Grandson g = (Grandson) p1;//Down casting
+		System.out.println(g.apartment);		
+		
+		
+
+	}
+
+}
