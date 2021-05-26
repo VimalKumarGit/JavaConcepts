@@ -1,0 +1,28 @@
+class Calc{
+	int a;
+	int b;
+	int result;
+	
+	public void add()
+	{
+		result = a+b;
+	}
+}
+
+
+public class Class_Object {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Calc c = new Calc();//c is object reference, new Calc() is object.
+		c.a=100;
+		c.b=50;
+		c.add();
+		
+		System.out.println(c.result);
+		
+
+	}
+
+}
