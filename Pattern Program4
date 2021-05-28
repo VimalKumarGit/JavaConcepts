@@ -1,0 +1,39 @@
+public class Second {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int n=5;
+		
+		for(int row=1, p=0; row<=n; row++, p=p+2)
+		{
+			for(int col=1; col<=row; col++)
+			{
+				System.out.print(p+" ");
+			}
+			
+			System.out.println();
+		}
+		
+		System.out.println("***************");
+		
+		for(int row=1, p=8; row<=n; row++, p=p-2)
+		{
+			for(int col=1; col<=row; col++)
+			{
+				System.out.print("  ");
+			}
+			
+			for(int col=row; col<=n; col++)
+			{
+				System.out.print(p+" ");
+			}
+			
+			System.out.println();
+		}
+		
+		
+
+	}
+
+}
