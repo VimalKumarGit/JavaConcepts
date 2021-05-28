@@ -1,0 +1,32 @@
+public class First {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int n=5;
+		
+		for(int row=1, p=1; row<=n; row++, p++)
+		{
+			for(int col=1; col<=row; col++)
+			{
+				//System.out.print(p+" ");
+				System.out.print(row + " ");
+			}
+			System.out.println();
+		}
+		
+		System.out.println("***********************");
+		
+		for(int row=1, p=5; row<=n; row++, p--)
+		{
+			for(int col=1; col<=row; col++)
+			{
+				//System.out.print(p+" ");
+				System.out.print(p + " ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
