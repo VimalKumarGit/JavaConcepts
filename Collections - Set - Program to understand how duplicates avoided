@@ -1,0 +1,65 @@
+public class Employees {
+	
+	String name;
+	int age;
+	
+	public Employees(String name, int age)
+	{
+		this.name = name;
+		this.age = age;
+	}
+	
+	public boolean equals(Object ob)
+	{
+		Employees e = (Employees) ob;
+		
+		/*int r = this.name.compareTo(e.name);
+			if(r==0)*/
+		if(this.age==e.age)
+				return true;
+		
+		return false;
+		
+	}
+	
+	public int hashCode()
+	{
+		return 1;
+	}
+	
+	public String toString()
+	{
+		return this.name+" "+this.age;
+	}
+
+}
+
+import java.util.HashSet;
+
+public class HashsetDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashSet hs = new HashSet();
+		
+		Employees e1 = new Employees("Vimal", 32);
+		Employees e2 = new Employees("Vimal", 27);
+		Employees e3 = new Employees("Latha", 24);
+		Employees e4 = new Employees("Latha", 24);
+		
+		hs.add(e1);
+		hs.add(e2);
+		hs.add(e3);
+		hs.add(e4);
+		
+		System.out.println(e1.hashCode());
+		System.out.println(e2.hashCode());
+		
+		System.out.println(hs);
+		
+		
+
+	}
+
+}
