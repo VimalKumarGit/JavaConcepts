@@ -1,0 +1,33 @@
+import java.util.HashSet;
+
+public class Set {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashSet hs = new HashSet();
+		hs.add(5);
+		hs.add(10);
+		hs.add("Vimal");
+		hs.add('R');
+		hs.add(true);
+		System.out.println(hs);
+		
+		HashSet hs2 = new HashSet();
+		hs2.addAll(hs);
+		System.out.println(hs2);
+		
+		//hs2.clear();
+		//System.out.println(hs2);
+		System.out.println(hs2.containsAll(hs));
+		System.out.println(hs2.contains("Vimal"));
+		System.out.println(hs2.equals(hs));
+		System.out.println(hs2.isEmpty());
+		System.out.println(hs2.remove('R'));//displays true saying it has removed
+		System.out.println(hs2.remove(500));//displays false when object not present
+		System.out.println(hs2);
+		
+
+	}
+
+}
