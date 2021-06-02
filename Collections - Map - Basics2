@@ -1,0 +1,18 @@
+import java.util.TreeMap;
+
+public class TreeHashMapClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//key must be homogenous
+		TreeMap t = new TreeMap();
+		t.put(98, "Latha");
+		t.put(96, "Vidya");
+		t.put(94, "Raja");
+		t.put(89, "Vimal");
+		System.out.println(t);
+
+	}
+
+}
