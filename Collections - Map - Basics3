@@ -1,0 +1,22 @@
+import java.util.LinkedHashMap;
+
+public class LinkedHashMapClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		LinkedHashMap l = new LinkedHashMap();
+		l.put(22, "Raja");
+		l.put(66, "Vidhu");
+		l.put("s", "Sri");
+		l.put(104, "Vidhya");
+		
+		//Insertion order of keys maintained		
+		System.out.println(l);
+		System.out.println(l.containsKey(33));
+		System.out.println(l.containsValue("Sri"));
+		
+
+	}
+
+}
