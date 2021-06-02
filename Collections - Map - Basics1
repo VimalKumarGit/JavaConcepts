@@ -1,0 +1,18 @@
+import java.util.HashMap;
+
+public class MapConcept {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashMap hm = new HashMap();
+		hm.put(1, "Vimal");
+		hm.put(2, "Singaram");
+		hm.put("sss", "Latha");
+		hm.put(3, "Vidya");
+		
+		System.out.println(hm);
+
+	}
+
+}
