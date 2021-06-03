@@ -1,0 +1,63 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class EntryMap {
+	String name;
+	int id;
+	int salary;
+	
+	public EntryMap(String name, int id, int salary)
+	{
+		this.name = name;
+		this.id = id;
+		this.salary= salary;
+	}
+	
+	public String toString()
+	{
+		return this.name+" "+this.id+" "+this.salary;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		EntryMap em1 = new EntryMap("Vimal", 101, 45000);
+		EntryMap em2 = new EntryMap("Singaram", 102, 46000);
+		EntryMap em3 = new EntryMap("Latha", 105, 50000);
+		EntryMap em4 = new EntryMap("Vidya", 101, 48000);
+		
+		HashMap hm = new HashMap();
+		hm.put(1,em1);//(1,em1) is called entry(key & value)
+		hm.put(3, em2);
+		hm.put(4, em3);
+		hm.put(2, em4);//(2,em4) is called entry(key & value)	
+		System.out.println("Map: "+hm);	//contains key=value pairs(2 objects)	
+		//System.out.println(hm.get(1));
+		//System.out.println(hm.entrySet());
+		Set s = hm.entrySet();
+		System.out.println("Set: "+s);//contains group of single objects.
+		System.out.println(s.size());
+		
+		Iterator i = s.iterator();
+		while(i.hasNext())
+		{
+			//System.out.println(i.next());
+			Map.Entry me = (Map.Entry) i.next();
+			if(me.getKey().equals(1))
+			{
+				em1 = new EntryMap("Vimal Kumar", 101, 50000);
+				me.setValue(em1);
+			}
+		}
+		System.out.println("After changes: "+hm);
+
+	}
+	
+	/*public String toString()
+	{
+		return this.name+" "+this.id+" "+this.salary;
+	}*/
+
+}
