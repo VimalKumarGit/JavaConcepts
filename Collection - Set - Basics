@@ -1,0 +1,36 @@
+import java.util.HashSet;
+
+public class SetIntrf_HashSet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashSet hs = new HashSet();
+		hs.add(5);
+		hs.add(10);
+		hs.add("Hi");
+		hs.add('c');
+		hs.add(true);
+		System.out.println(hs);
+		
+		HashSet hs1 = new HashSet();
+		hs1.addAll(hs);
+		System.out.println(hs1);
+		System.out.println(hs.equals(hs1));
+		//hs1.clear();
+		//System.out.println(hs1);
+		System.out.println(hs.contains(true));
+		System.out.println(hs1.containsAll(hs1));
+		System.out.println(hs.isEmpty());
+		System.out.println(hs1.remove('c'));
+		System.out.println(hs1);
+		Object[] a = hs1.toArray();
+		for(int i=0; i<a.length; i++)
+		{
+			System.out.print(a[i]+" ");
+		}
+		
+
+	}
+
+}
