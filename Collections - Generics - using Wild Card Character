@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+
+public class Generics1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub		
+			
+		ArrayList<String> al = new ArrayList<String>();
+		al.add("Vimal");
+		al.add("Singaram");
+		
+		Generics1 g = new Generics1();
+		g.print(al);		
+				
+		ArrayList<Integer> al1 = new ArrayList<Integer>();
+		al1.add(10);
+		al1.add(5);
+		g.print(al1);	
+		
+		g.print1(al1);
+
+	}
+
+	/*private void print1(ArrayList<Integer> al1) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(al1);
+		
+	}*/
+
+	public void print(ArrayList<?> al) {// ? - wild card character accepts any data type
+		// TODO Auto-generated method stub
+		
+		System.out.println(al);
+		
+	}	
+	
+	public void print1(ArrayList<? extends Number> al) {// ? accepts only number data type
+		// TODO Auto-generated method stub
+		System.out.println("***********");
+		System.out.println(al);
+		
+	}
+
+}
