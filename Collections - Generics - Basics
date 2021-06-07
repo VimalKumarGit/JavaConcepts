@@ -1,0 +1,56 @@
+import java.util.ArrayList;
+import java.util.TreeSet;
+
+public class Generics {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Employees e1 = new Employees("VimalKumar", 32, 40000);
+		Employees e2 = new Employees("Kumar", 30, 38000);
+		
+		ArrayList al = new ArrayList();
+		al.add(e1);
+		al.add(e2);
+		System.out.println(al.get(0));
+		
+		Object ob = al.get(0);
+		Employees em = (Employees)ob;
+		System.out.println(em.name);
+		
+		TreeSet<Integer> ts = new TreeSet<Integer>();//<> denotes Generics
+		ts.add(5);
+		//ts.add("John");//Hetegenous elements not allowed in TreeSet.
+		ts.add(100);
+		ts.add(10);		
+		System.out.println(ts);		
+		
+		
+
+	}
+
+}
+
+
+public class Employees {
+	
+	String name;
+	int age;
+	int salary;
+	
+	public Employees(String name, int age, int salary)
+	{
+		
+		this.name = name;
+		this.age = age;
+		this.salary = salary;
+		
+	}
+	
+	public String toString()
+	{
+		return this.name+" "+this.age+" "+this.salary;
+	}
+
+}
+
