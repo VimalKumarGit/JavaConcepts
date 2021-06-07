@@ -1,0 +1,32 @@
+public class Generics2<T> { // <T> denotes bound to any type of class
+//public class Generics2<T extends Employees> { // <T> denotes bound to only particular class
+	//<T extends Employees> - Generic Classes
+	
+	T variable;
+	
+	public Generics2(T var)
+	{
+		// TODO Auto-generated method stub
+		this.variable = var;		
+	}
+	
+	public void method()
+	{
+		System.out.println("Class of this object is "+variable.getClass().getTypeName());
+	}
+
+}
+
+public class GenericsClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Generics2<String> obj = new Generics2<String>("Vimal");//accepts 
+		obj.method();
+		Generics2<Integer> obj1 = new Generics2<Integer>(10);//does not accept 
+		obj1.method();
+
+	}
+
+}
