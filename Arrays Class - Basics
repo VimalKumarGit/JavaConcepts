@@ -1,0 +1,16 @@
+import java.util.Arrays;
+
+public class ArrayClassBasics {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] a = {10, 15, 20};//Array is an object
+		int[] b = {10, 15, 20};//Array is an object
+		//System.out.println(a.equals(b));//won't work
+		boolean result = Arrays.equals(a, b);
+		System.out.println(result);
+
+	}
+
+}
