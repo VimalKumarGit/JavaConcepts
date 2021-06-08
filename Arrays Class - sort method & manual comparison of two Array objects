@@ -1,0 +1,37 @@
+import java.util.Arrays;
+
+public class ArraysObjectManualComparision {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] a = {1, 2, 3, 4};
+		int[] b = {5, 2, 3, 4};
+		
+		Arrays.sort(b);
+		for(int i=0; i<b.length; i++)
+			System.out.print(b[i]+" ");
+		
+		System.out.println();
+		
+		//manual comparison of two arrays
+		int j=0;
+		boolean same = true;
+		while(a[j]<a.length)
+		{
+			if(a[j]!=b[j])
+			{
+				same = false;
+				System.out.println("Not same");
+				break;
+			}	
+			
+			j++;
+		}
+		if(same == true)		
+			System.out.println("Both are same");				
+		
+
+	}
+
+}
