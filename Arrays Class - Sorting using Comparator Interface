@@ -1,0 +1,73 @@
+import java.util.Comparator;
+
+public class Comparator_Demo implements Comparator {
+
+	@Override
+	public int compare(Object o1, Object o2) {
+		// TODO Auto-generated method stub
+		
+		String s1 = (String) o1;
+		String s2 = (String) o2;
+		
+		if(s1.length()>s2.length())
+			return 1;
+		else if (s1.length()<s2.length())
+			return -1;
+		else
+			return 0;		
+		
+		/*int result = s1.compareTo(s2);		
+		if(result>0)
+			return -1;
+		else if(result<0)
+			return 1;
+		else		
+		 return 0;*/
+	}
+
+}
+
+import java.util.Arrays;
+
+public class ArraysClassBasics1 {
+	
+	String name;
+
+	public ArraysClassBasics1(String name) {
+		// TODO Auto-generated constructor stub
+		
+		this.name = name;
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String[] names = {"Vimal", "John", "Alex", "Peter", "Bob", "Zack", "Le"};		
+		Arrays.sort(names);
+		for(int i=0; i<names.length; i++)
+			System.out.print(names[i]+" ");
+		
+		Comparator_Demo cd = new Comparator_Demo();
+		Arrays.sort(names, cd);
+		System.out.println();
+		System.out.println("Below result using compartor interface sorting:");
+		for(int i=0; i<names.length; i++)
+			System.out.print(names[i]+" ");
+		
+		System.out.println();
+		System.out.println("***********************");
+		
+		ArraysClassBasics1 ob1 = new ArraysClassBasics1("Vimal");
+		ArraysClassBasics1 ob2 = new ArraysClassBasics1("John");
+		ArraysClassBasics1 ob3 = new ArraysClassBasics1("Alex");
+		ArraysClassBasics1 ob4 = new ArraysClassBasics1("Peter");
+		ArraysClassBasics1 ob5 = new ArraysClassBasics1("Bob");
+		
+		ArraysClassBasics1[] obj = {ob1, ob2, ob3, ob4, ob5};
+		for(int i=0; i<obj.length; i++)
+			System.out.print(obj[i]+" ");
+		
+	}
+
+}
